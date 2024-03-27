@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./styles.css";
 
-export default function LoadMoreData() {
+function LoadMoreData() {
     const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
     const [count, setCount] = useState(0);
@@ -63,3 +63,4 @@ export default function LoadMoreData() {
         </div>
     );
 }
+export default LoadMoreData
